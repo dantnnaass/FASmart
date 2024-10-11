@@ -1,0 +1,20 @@
+<div class="box carousel brand">
+   
+    <div class="brand-main">
+        <div class="row">
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <th:block th:each="item: ${manufacturer}">
+                        <div class="carousel-slide">
+                            <div class="text-center">
+                                <img th:src="@{|/assets/images/logo/${item.logo}|}" alt="Starbucks"
+                                    class="img-responsive m-auto" />
+                            </div>
+                        </div>
+                    </th:block>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
